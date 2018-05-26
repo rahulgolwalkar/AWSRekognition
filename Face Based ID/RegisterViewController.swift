@@ -9,11 +9,10 @@
 import UIKit
 import AVFoundation
 
-class RegisterViewController: UIViewController, AVCapturePhotoCaptureDelegate, AVCaptureMetadataOutputObjectsDelegate {
+class RegisterViewController: UIViewController, AVCapturePhotoCaptureDelegate {
 
     let captureSession = AVCaptureSession()
     let cameraOutput = AVCapturePhotoOutput()
-    let metaDataOutput = AVCaptureMetadataOutput()
 
     
     override func viewDidLoad() {
@@ -25,10 +24,6 @@ class RegisterViewController: UIViewController, AVCapturePhotoCaptureDelegate, A
         do {
             try captureSession.addInput(AVCaptureDeviceInput(device: captureDevice!))
             captureSession.sessionPreset = AVCaptureSession.Preset.photo
-            
-            captureSession.addOutput(metaDataOutput)
-            metaDataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-            metaDataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.face]
             
             captureSession.startRunning()
             
@@ -62,8 +57,4 @@ class RegisterViewController: UIViewController, AVCapturePhotoCaptureDelegate, A
         UIImageWriteToSavedPhotosAlbum(UIImage(data: imageData!)!, nil, nil, nil)
     }
     
-    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        print("Detected  face")
-    }
-
 }
