@@ -13,6 +13,8 @@
 		7D0ECB5220B982B000C3A760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0ECB5120B982B000C3A760 /* Assets.xcassets */; };
 		7D0ECB5520B982B000C3A760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0ECB5320B982B000C3A760 /* LaunchScreen.storyboard */; };
 		7D0ECB6020B982B000C3A760 /* Face_Based_IDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB5F20B982B000C3A760 /* Face_Based_IDTests.swift */; };
+		7D0ECB6B20B9845B00C3A760 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB6A20B9845B00C3A760 /* RegisterViewController.swift */; };
+		7D0ECB6D20B9ACBF00C3A760 /* DetectFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB6C20B9ACBF00C3A760 /* DetectFaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		7D0ECB5B20B982B000C3A760 /* Face Based IDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Face Based IDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0ECB5F20B982B000C3A760 /* Face_Based_IDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face_Based_IDTests.swift; sourceTree = "<group>"; };
 		7D0ECB6120B982B000C3A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D0ECB6A20B9845B00C3A760 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7D0ECB6C20B9ACBF00C3A760 /* DetectFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectFaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				7D0ECB4A20B982AE00C3A760 /* AppDelegate.swift */,
+				7D0ECB6C20B9ACBF00C3A760 /* DetectFaceViewController.swift */,
+				7D0ECB6A20B9845B00C3A760 /* RegisterViewController.swift */,
 				7D0ECB4C20B982AE00C3A760 /* ViewController.swift */,
 				7D0ECB4E20B982AE00C3A760 /* Main.storyboard */,
 				7D0ECB5120B982B000C3A760 /* Assets.xcassets */,
@@ -197,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0ECB6D20B9ACBF00C3A760 /* DetectFaceViewController.swift in Sources */,
+				7D0ECB6B20B9845B00C3A760 /* RegisterViewController.swift in Sources */,
 				7D0ECB4D20B982AE00C3A760 /* ViewController.swift in Sources */,
 				7D0ECB4B20B982AE00C3A760 /* AppDelegate.swift in Sources */,
 			);
