@@ -15,6 +15,8 @@
 		7D0ECB6020B982B000C3A760 /* Face_Based_IDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB5F20B982B000C3A760 /* Face_Based_IDTests.swift */; };
 		7D0ECB6B20B9845B00C3A760 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB6A20B9845B00C3A760 /* RegisterViewController.swift */; };
 		7D0ECB6D20B9ACBF00C3A760 /* DetectFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB6C20B9ACBF00C3A760 /* DetectFaceViewController.swift */; };
+		81CF14F040D4B93CF167412D /* Pods_Face_Based_ID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3319EDB531E0F02B69CB6C46 /* Pods_Face_Based_ID.framework */; };
+		F4A680BC5B565823D4E4220B /* Pods_Face_Based_IDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA44E8765E2B258D178EE6EB /* Pods_Face_Based_IDTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3319EDB531E0F02B69CB6C46 /* Pods_Face_Based_ID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Face_Based_ID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4367E0ED2F8FA84BB5BD2722 /* Pods-Face Based ID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Based ID.release.xcconfig"; path = "Pods/Target Support Files/Pods-Face Based ID/Pods-Face Based ID.release.xcconfig"; sourceTree = "<group>"; };
+		7AAD0C01A89E3BFF50922801 /* Pods-Face Based ID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Based ID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Face Based ID/Pods-Face Based ID.debug.xcconfig"; sourceTree = "<group>"; };
 		7D0ECB4720B982AE00C3A760 /* Face Based ID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Based ID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0ECB4A20B982AE00C3A760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D0ECB4C20B982AE00C3A760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		7D0ECB6120B982B000C3A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D0ECB6A20B9845B00C3A760 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7D0ECB6C20B9ACBF00C3A760 /* DetectFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectFaceViewController.swift; sourceTree = "<group>"; };
+		80C116B1372950C7F00ED36E /* Pods-Face Based IDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Based IDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Face Based IDTests/Pods-Face Based IDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96B76686D85E9186B56B6F2F /* Pods-Face Based IDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Based IDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Face Based IDTests/Pods-Face Based IDTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA44E8765E2B258D178EE6EB /* Pods_Face_Based_IDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Face_Based_IDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CF14F040D4B93CF167412D /* Pods_Face_Based_ID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A680BC5B565823D4E4220B /* Pods_Face_Based_IDTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54D53CF65C1849A9BCF4EF13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AAD0C01A89E3BFF50922801 /* Pods-Face Based ID.debug.xcconfig */,
+				4367E0ED2F8FA84BB5BD2722 /* Pods-Face Based ID.release.xcconfig */,
+				80C116B1372950C7F00ED36E /* Pods-Face Based IDTests.debug.xcconfig */,
+				96B76686D85E9186B56B6F2F /* Pods-Face Based IDTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7D0ECB3E20B982AE00C3A760 = {
 			isa = PBXGroup;
 			children = (
 				7D0ECB4920B982AE00C3A760 /* Face Based ID */,
 				7D0ECB5E20B982B000C3A760 /* Face Based IDTests */,
 				7D0ECB4820B982AE00C3A760 /* Products */,
+				54D53CF65C1849A9BCF4EF13 /* Pods */,
+				CD94F0876600830F58371B42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +125,15 @@
 			path = "Face Based IDTests";
 			sourceTree = "<group>";
 		};
+		CD94F0876600830F58371B42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3319EDB531E0F02B69CB6C46 /* Pods_Face_Based_ID.framework */,
+				FA44E8765E2B258D178EE6EB /* Pods_Face_Based_IDTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D0ECB6420B982B000C3A760 /* Build configuration list for PBXNativeTarget "Face Based ID" */;
 			buildPhases = (
+				F2CB95A88C07ECA98DCBA5F4 /* [CP] Check Pods Manifest.lock */,
 				7D0ECB4320B982AE00C3A760 /* Sources */,
 				7D0ECB4420B982AE00C3A760 /* Frameworks */,
 				7D0ECB4520B982AE00C3A760 /* Resources */,
+				4507D603E909436F50B5EE0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D0ECB6720B982B000C3A760 /* Build configuration list for PBXNativeTarget "Face Based IDTests" */;
 			buildPhases = (
+				EE90C9A3F399704B74E976D7 /* [CP] Check Pods Manifest.lock */,
 				7D0ECB5720B982B000C3A760 /* Sources */,
 				7D0ECB5820B982B000C3A760 /* Frameworks */,
 				7D0ECB5920B982B000C3A760 /* Resources */,
@@ -197,6 +232,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4507D603E909436F50B5EE0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Face Based ID/Pods-Face Based ID-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Face Based ID/Pods-Face Based ID-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE90C9A3F399704B74E976D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Face Based IDTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CB95A88C07ECA98DCBA5F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Face Based ID-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D0ECB4320B982AE00C3A760 /* Sources */ = {
@@ -364,6 +460,7 @@
 		};
 		7D0ECB6520B982B000C3A760 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AAD0C01A89E3BFF50922801 /* Pods-Face Based ID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +479,7 @@
 		};
 		7D0ECB6620B982B000C3A760 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4367E0ED2F8FA84BB5BD2722 /* Pods-Face Based ID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +498,7 @@
 		};
 		7D0ECB6820B982B000C3A760 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C116B1372950C7F00ED36E /* Pods-Face Based IDTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -421,6 +520,7 @@
 		};
 		7D0ECB6920B982B000C3A760 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B76686D85E9186B56B6F2F /* Pods-Face Based IDTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

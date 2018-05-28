@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AWSCore
+import AWSCognito
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1, identityPoolId:"us-east-1:f69145d7-7ff2-4afb-b441-5ecb80a5bde7")
+        let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
+
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+
+        
+        // Just an example how we can store key value pairs in the aws cognito user data set
+//        // Initialize the Cognito Sync client
+//        let syncClient = AWSCognito.default()
+//
+//        // Create a record in a dataset and synchronize with the server
+//        let dataset = syncClient.openOrCreateDataset("myDataset")
+//        dataset.setString("myValue", forKey:"myKey")
+//        dataset.synchronize().continueWith {(task: AWSTask!) -> AnyObject? in
+//            // Your handler code here
+//            print("Synchronized!!!!")
+//            print(task)
+//            print(dataset)
+//            return nil
+//
+//        }
+//        print(dataset.string(forKey: "myKey"))
+
+        
+        
+        
         return true
     }
 
