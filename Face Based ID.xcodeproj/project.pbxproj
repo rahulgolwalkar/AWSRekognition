@@ -15,6 +15,7 @@
 		7D0ECB6020B982B000C3A760 /* Face_Based_IDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB5F20B982B000C3A760 /* Face_Based_IDTests.swift */; };
 		7D0ECB6B20B9845B00C3A760 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB6A20B9845B00C3A760 /* RegisterViewController.swift */; };
 		7D0ECB6D20B9ACBF00C3A760 /* DetectFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB6C20B9ACBF00C3A760 /* DetectFaceViewController.swift */; };
+		7D0ECB7020BD5A5800C3A760 /* UIImage+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0ECB6F20BD5A5800C3A760 /* UIImage+Util.swift */; };
 		81CF14F040D4B93CF167412D /* Pods_Face_Based_ID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3319EDB531E0F02B69CB6C46 /* Pods_Face_Based_ID.framework */; };
 		F4A680BC5B565823D4E4220B /* Pods_Face_Based_IDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA44E8765E2B258D178EE6EB /* Pods_Face_Based_IDTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		7D0ECB6120B982B000C3A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D0ECB6A20B9845B00C3A760 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7D0ECB6C20B9ACBF00C3A760 /* DetectFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectFaceViewController.swift; sourceTree = "<group>"; };
+		7D0ECB6F20BD5A5800C3A760 /* UIImage+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Util.swift"; sourceTree = "<group>"; };
 		80C116B1372950C7F00ED36E /* Pods-Face Based IDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Based IDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Face Based IDTests/Pods-Face Based IDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96B76686D85E9186B56B6F2F /* Pods-Face Based IDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Based IDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Face Based IDTests/Pods-Face Based IDTests.release.xcconfig"; sourceTree = "<group>"; };
 		FA44E8765E2B258D178EE6EB /* Pods_Face_Based_IDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Face_Based_IDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				7D0ECB4A20B982AE00C3A760 /* AppDelegate.swift */,
+				7D0ECB6E20BD5A1C00C3A760 /* Utilities */,
 				7D0ECB6C20B9ACBF00C3A760 /* DetectFaceViewController.swift */,
 				7D0ECB6A20B9845B00C3A760 /* RegisterViewController.swift */,
 				7D0ECB4C20B982AE00C3A760 /* ViewController.swift */,
@@ -123,6 +126,14 @@
 				7D0ECB6120B982B000C3A760 /* Info.plist */,
 			);
 			path = "Face Based IDTests";
+			sourceTree = "<group>";
+		};
+		7D0ECB6E20BD5A1C00C3A760 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7D0ECB6F20BD5A5800C3A760 /* UIImage+Util.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		CD94F0876600830F58371B42 /* Frameworks */ = {
@@ -244,12 +255,14 @@
 				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -300,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D0ECB6D20B9ACBF00C3A760 /* DetectFaceViewController.swift in Sources */,
+				7D0ECB7020BD5A5800C3A760 /* UIImage+Util.swift in Sources */,
 				7D0ECB6B20B9845B00C3A760 /* RegisterViewController.swift in Sources */,
 				7D0ECB4D20B982AE00C3A760 /* ViewController.swift in Sources */,
 				7D0ECB4B20B982AE00C3A760 /* AppDelegate.swift in Sources */,

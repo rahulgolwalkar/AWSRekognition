@@ -53,16 +53,19 @@ class RegisterViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         photoSettings.isHighResolutionPhotoEnabled = true
         photoSettings.flashMode = .off
         cameraOutput.capturePhoto(with: photoSettings, delegate: self)
+        
 
     }
     
     func indexFaceWithAWSRekognition (faceImage: UIImage) {
         
         let image = AWSRekognitionImage()
-        image?.bytes = UIImageJPEGRepresentation(faceImage, 1.0)
+        image?.bytes = faceImage.resizeToApprox(sizeInMB: 1.2)
+        
+        print("Image size : \((image?.bytes?.count)!)")
         
         let request = AWSRekognitionIndexFacesRequest()
-        request?.collectionId = "firstCollection"
+        request?.collectionId = "secondCollection"
         request?.externalImageId = "some_random_string"
         request?.detectionAttributes = [String]()
         request?.image = image
@@ -101,7 +104,7 @@ class RegisterViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
-            print("Text field: \(String(describing: textField!.text))")
+            print("\(self.faceId) \nText field: \(String(describing: textField!.text))")
             
             UserDefaults.standard.set(textField?.text!, forKey: self.faceId)
             
@@ -114,8 +117,13 @@ class RegisterViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         let imageData = photo.fileDataRepresentation()
         // TODO : if expanding this.. Can optimize on this part .. here data to image transfers too many
         let uiImage = UIImage(data: imageData!)
-        UIImageWriteToSavedPhotosAlbum(uiImage!, nil, nil, nil)
+        // UIImageWriteToSavedPhotosAlbum(uiImage!, nil, nil, nil)
         indexFaceWithAWSRekognition(faceImage: uiImage!)
     }
     
+    @IBAction func backClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
+
+

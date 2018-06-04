@@ -9,6 +9,7 @@ target 'Face Based ID' do
 
     pod 'AWSCognito'
     pod 'AWSRekognition'
+    pod 'Toast-Swift', '~> 3.0.1'
 
 
   target 'Face Based IDTests' do
